@@ -44,14 +44,14 @@
       "BaQu1": 1,
       "BaQu2": 0,
       "BaQu3": 1,
-      "BaQu4": 0,
-      "BaQu5": 0,
-      "BaQu6": 0
+      "BaQu4": 1,
+      "BaQu5": 1,
+      "BaQu6": 1
     }
   },
   "humanReadable": {
     "Advanced Queries": "0/7",
-    "finalTestScore": "FINAL SCORE: 2/13",
-    "Basic Queries": "2/6"
+    "finalTestScore": "FINAL SCORE: 5/13",
+    "Basic Queries": "5/6"
   }
 }

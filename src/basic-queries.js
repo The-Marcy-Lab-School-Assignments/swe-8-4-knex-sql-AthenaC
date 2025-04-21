@@ -15,7 +15,7 @@ const selectAllBooks = async () => {
 };
 
 const selectAllTitlesAndGenres = async () => {
-  const query = `SELECT titles, genres FROM books;`;
+  const query = `SELECT titles, genre FROM books;`;
 
   const { rows } = await knex.raw(query);
   return rows;
@@ -34,7 +34,7 @@ const selectAllBooksOver250Pages = async () => {
 const insertDuneBook = async () => {
   const query = ` 
     INSERT INTO books (title, genre, pages, is_movie) 
-    VALUES ('Dune', 'Sci Fi', 500, false);
+    VALUES ('Dune', 'Sci Fi', 500, false)
     RETURNING *;
   `;
 
@@ -44,7 +44,9 @@ const insertDuneBook = async () => {
 
 const updateShortBooksToMovies = async () => {
   const query = ` 
-    YOUR QUERY HERE
+    UPDATE books
+    SET is_movie = true
+    WHERE pages < 150
     RETURNING *;
   `;
 
@@ -53,7 +55,10 @@ const updateShortBooksToMovies = async () => {
 };
 
 const deleteDuneBook = async () => {
-  const query = ``;
+  const query = `
+    DELETE FROM books
+    WHERE title = 'Dune';
+  `;
 
   const { rowCount } = await knex.raw(query);
   return { rowCount };
