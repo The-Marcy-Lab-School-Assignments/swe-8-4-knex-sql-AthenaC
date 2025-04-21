@@ -15,7 +15,7 @@ const selectAllBooks = async () => {
 };
 
 const selectAllTitlesAndGenres = async () => {
-  const query = `SELECT titles, genre FROM books;`;
+  const query = `SELECT title, genre FROM books;`;
 
   const { rows } = await knex.raw(query);
   return rows;

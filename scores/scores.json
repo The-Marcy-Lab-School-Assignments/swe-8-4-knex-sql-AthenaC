@@ -32,8 +32,8 @@
   },
   "testScores": {
     "Advanced Queries": {
-      "AdQu1": 0,
-      "AdQu2": 0,
+      "AdQu1": 1,
+      "AdQu2": 1,
       "AdQu3": 0,
       "AdQu4": 0,
       "AdQu5": 0,
@@ -42,7 +42,7 @@
     },
     "Basic Queries": {
       "BaQu1": 1,
-      "BaQu2": 0,
+      "BaQu2": 1,
       "BaQu3": 1,
       "BaQu4": 1,
       "BaQu5": 1,
@@ -50,8 +50,8 @@
     }
   },
   "humanReadable": {
-    "Advanced Queries": "0/7",
-    "finalTestScore": "FINAL SCORE: 5/13",
-    "Basic Queries": "5/6"
+    "Advanced Queries": "2/7",
+    "finalTestScore": "FINAL SCORE: 8/13",
+    "Basic Queries": "6/6"
   }
 }
